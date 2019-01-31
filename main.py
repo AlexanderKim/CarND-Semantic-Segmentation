@@ -197,7 +197,7 @@ def run():
         logits, train_op, cross_entropy_loss = optimize(layer_output, correct_label, learning_rate, num_classes)
 
         epochs = 5
-        batch_size = 5
+        batch_size = 3
 
         saver = tf.train.Saver()
 
