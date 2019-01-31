@@ -201,6 +201,7 @@ def run():
 
         saver = tf.train.Saver()
 
+        sess.run(tf.global_variables_initializer())
         train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_loss, input_image,
                  correct_label, keep_prob, learning_rate)
 
