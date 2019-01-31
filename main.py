@@ -197,7 +197,7 @@ def run():
         logits, train_op, cross_entropy_loss = optimize(layer_output, correct_label, learning_rate, num_classes)
 
         epochs = 5
-        batch_size = 2
+        batch_size = 3
 
         saver = tf.train.Saver()
 
@@ -205,7 +205,8 @@ def run():
         train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_loss, input_image,
                  correct_label, keep_prob, learning_rate)
 
-        helper.save_inference_samples(runs_dir, runs_dir, data_dir, sess, image_shape, logits, keep_prob, input_image, saver)
+        helper.save_inference_samples(runs_dir, data_dir, sess, image_shape, logits, keep_prob, input_image)
+
 
 if __name__ == '__main__':
     run()
