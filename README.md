@@ -33,12 +33,12 @@ Batch size is set to 2 as with larger values machine ran out of memory
 
 Selective sample of resulting labelled images
 
-!(./um_000008.png)
-!(./um_000034.png)
-!(./um_000050.png)
-!(./um_000061.png)
-!(./um_000071.png)
-!(./umm_000024.png)
+![sample](./um_000008.png)
+![sample](./um_000034.png)
+![sample](./um_000050.png)
+![sample](./um_000061.png)
+![sample](./um_000071.png)
+![sample](./umm_000024.png)
 
 
 ### Setup
