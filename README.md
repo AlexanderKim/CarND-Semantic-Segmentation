@@ -2,6 +2,45 @@
 ### Introduction
 In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
 
+
+### Rubric points
+
+#### Functions implemented correctly: `load_vgg`, `layers`, `optimize`, `train_nn`
+
+The implementation is done according to the materials provided. Correctness is proven by the results below: loss decrease and image lageling.
+
+#### Loss decrease
+Epoch 1:
+- Loss: = 1.162
+- Loss: = 3.485
+- Loss: = 0.744
+- Loss: = 0.750
+- Loss: = 0.791
+- ...
+
+Epoch 50:
+- Loss: = 0.094
+- Loss: = 0.035
+- Loss: = 0.067
+- Loss: = 0.080
+- Loss: = 0.049
+
+#### Epochs and batch size
+Number of Epochs is set to 50
+Batch size is set to 2 as with larger values machine ran out of memory
+ 
+#### Image labels
+
+Selective sample of resulting labelled images
+
+!(./um_000008.png)
+!(./um_000034.png)
+!(./um_000050.png)
+!(./um_000061.png)
+!(./um_000071.png)
+!(./umm_000024.png)
+
+
 ### Setup
 ##### GPU
 `main.py` will check to make sure you are using GPU - if you don't have a GPU on your system, you can use AWS or another cloud computing platform.
